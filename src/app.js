@@ -5,7 +5,7 @@ const app = express();
 var cors = require('cors');
 app.use(express.json());
 app.use(cors());
-app.use(morgan('dev'));s
+app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
     res.send('Bienvenido a Node JS');
