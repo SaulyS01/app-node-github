@@ -1,5 +1,4 @@
 import app from './app'
 
-server.listen(port,()=>{  // do not add localhost here if you are deploying it
-    console.log("server listening to port "+port);
-});
+app.listen(process.env.PORT || 3000);
+console.log('server listen on port: ', 3000);
